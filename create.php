@@ -1,5 +1,4 @@
 <?php
-	include "include/db.php";
 	require_once "create.action.php";
 ?>
 	<h1>Add</h1>
@@ -7,30 +6,18 @@
 		
 		<div>
 			<label>Merknaam:</label>
-			<input type="text" id="merknaam" name="merknaam">
+			<input type="text" id="merk" name="merk">
+		<br/>
 		</div>
-<label>Maat:</label>
-<select id="maat" name="maat">
-	<?php
-		foreach($maten as $maat):
-	?>
-		<option value="<?=$maat['maat']?>"><?=$maat['maat']?></option>
-	<?php
-		endforeach;
-	?>
-</select>
-<br/>
-	<label>Aantal:</label>
-	<select id="aantal" name="aantal">
-	<?php
-		foreach($aantalen as $aantal):
-	?>
-		<option value="<?=$aantal['aantal']?>"><?=$aantal['aantal']?></option>
-	<?php
-		endforeach;
-	?>
-	</select>
-	<br/>
+		<div>
+			<label>Maat:</label>
+			<input type="text" id="maat" name="maat">
+		<br/>
+		</div>
+		<div>
+			<label>Aantal:</label>
+			<input type="text" id="aantal" name="aantal">
+		<br/>
 		</div>
 			<input type="submit" value="submit">
 		</div>

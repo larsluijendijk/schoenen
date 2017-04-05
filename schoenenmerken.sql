@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 24 mrt 2017 om 11:38
+-- Gegenereerd op: 05 apr 2017 om 14:42
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -64,7 +64,31 @@ INSERT INTO `maten` (`id`, `maat`, `id_aantal`) VALUES
 (12, '40', 2),
 (13, '41', 3),
 (14, '41', 2),
-(15, '41', 3);
+(15, '41', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `schoen`
+--
+
+CREATE TABLE IF NOT EXISTS `schoen` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `merk` varchar(200) NOT NULL,
+  `maat` varchar(200) NOT NULL,
+  `aantal` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `schoen`
+--
+
+INSERT INTO `schoen` (`id`, `merk`, `maat`, `aantal`) VALUES
+(1, 'Adidas', '42', '600'),
+(2, 'Sportive', '42', '500'),
+(3, 'Puma', '38', '100'),
+(4, 'Nikes', '43', '200');
 
 -- --------------------------------------------------------
 
